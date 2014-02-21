@@ -22,6 +22,7 @@
 		C42216F218AE6D8E00C137E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42216D118AE6D8E00C137E5 /* UIKit.framework */; };
 		C42216FA18AE6D8E00C137E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C42216F818AE6D8E00C137E5 /* InfoPlist.strings */; };
 		C42216FC18AE6D8E00C137E5 /* CarValetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C42216FB18AE6D8E00C137E5 /* CarValetTests.m */; };
+		C422170718AE6E1C00C137E5 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = C422170618AE6E1C00C137E5 /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		C42216F718AE6D8E00C137E5 /* CarValetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CarValetTests-Info.plist"; sourceTree = "<group>"; };
 		C42216F918AE6D8E00C137E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C42216FB18AE6D8E00C137E5 /* CarValetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarValetTests.m; sourceTree = "<group>"; };
+		C422170518AE6E1C00C137E5 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		C422170618AE6E1C00C137E5 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 		C42216D318AE6D8E00C137E5 /* CarValet */ = {
 			isa = PBXGroup;
 			children = (
+				C422170518AE6E1C00C137E5 /* Car.h */,
+				C422170618AE6E1C00C137E5 /* Car.m */,
 				C42216DC18AE6D8E00C137E5 /* AppDelegate.h */,
 				C42216DD18AE6D8E00C137E5 /* AppDelegate.m */,
 				C42216DF18AE6D8E00C137E5 /* Main_iPhone.storyboard */,
@@ -202,6 +207,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Bob Martens";
 				TargetAttributes = {
+					C42216C918AE6D8E00C137E5 = {
+						DevelopmentTeam = 8JXP2Q37FJ;
+					};
 					C42216ED18AE6D8E00C137E5 = {
 						TestTargetID = C42216C918AE6D8E00C137E5;
 					};
@@ -255,6 +263,7 @@
 			files = (
 				C42216E718AE6D8E00C137E5 /* ViewController.m in Sources */,
 				C42216DE18AE6D8E00C137E5 /* AppDelegate.m in Sources */,
+				C422170718AE6E1C00C137E5 /* Car.m in Sources */,
 				C42216DA18AE6D8E00C137E5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,10 +401,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CarValet/CarValet-Prefix.pch";
 				INFOPLIST_FILE = "CarValet/CarValet-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -405,10 +417,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CarValet/CarValet-Prefix.pch";
 				INFOPLIST_FILE = "CarValet/CarValet-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
